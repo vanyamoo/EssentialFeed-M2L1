@@ -8,26 +8,34 @@
 import XCTest
 
 class RemoteFeedLoader {
+    let client: HTTPClient
+    
+    init(client: HTTPClient) {
+        self.client = client
+    }
+    
     func load() {
         //HTTPClient.shared.requestedURL = URL(string: "https://a-url.com")
-        HTTPClient.shared.get(from: URL(string: "https://a-url.com")!)
+        //HTTPClient.shared.get(from: URL(string: "https://a-url.com")!)
+        client.get(from: URL(string: "https://a-url.com")!)
     }
 }
 
-class HTTPClient {
-    static var shared = HTTPClient() // let
+protocol HTTPClient { // class HTTPClient {
+    //static var shared = HTTPClient() // let
     
     //private init() { }
     
-    func get(from url: URL) {
-//        requestedURL = url
-    }
+    func get(from url: URL)
+    //{
+        //requestedURL = url
+    //}
     
     //var requestedURL: URL?
 }
 
 class HTTPClientSpy: HTTPClient {
-    override func get(from url: URL) {
+    func get(from url: URL) { // override func get(from url: URL) {
         requestedURL = url
     }
     
@@ -40,8 +48,8 @@ final class RemoteFeedloaderTests: XCTestCase {
         //let client = HTTPClient()
         //let client = HTTPClient.shared
         let client = HTTPClientSpy()
-        HTTPClient.shared = client
-        let sut = RemoteFeedLoader()  // sut - system under test
+        //HTTPClient.shared = client
+        let _ = RemoteFeedLoader(client: client)
         
 //        sut.load()
 //        XCTAssert(client.requestedURL)
@@ -52,8 +60,8 @@ final class RemoteFeedloaderTests: XCTestCase {
         //let client = HTTPClient()
         //let client = HTTPClient.shared
         let client = HTTPClientSpy()
-        HTTPClient.shared = client
-        let sut = RemoteFeedLoader()
+        //HTTPClient.shared = client
+        let sut = RemoteFeedLoader(client: client) // sut - system under test
         
         sut.load()
         
