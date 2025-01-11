@@ -37,6 +37,7 @@
 		4E61DD102D2D31FF00BD8198 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				FeedItemsMapper.swift,
 				HTTPClient.swift,
 				RemoteFeedLoader.swift,
 			);
