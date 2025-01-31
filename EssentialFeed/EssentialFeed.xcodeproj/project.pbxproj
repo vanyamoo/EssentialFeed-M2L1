@@ -79,6 +79,7 @@
 		4E3DF4A92D3AA33C009E413A /* EssentialFeedAPIEndToEndTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = EssentialFeedAPIEndToEndTests; sourceTree = "<group>"; };
 		4E3DF4DE2D4934CC009E413A /* Helpers */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (4E3DF4E12D4934CC009E413A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Helpers; sourceTree = "<group>"; };
 		4E3DF4E22D4B9192009E413A /* Feed Cache */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (4E3DF4E52D4B9426009E413A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Feed Cache"; sourceTree = "<group>"; };
+		4E3DF4EE2D4CDD0D009E413A /* Helpers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Helpers; sourceTree = "<group>"; };
 		4E61DD0C2D2D319500BD8198 /* Feed API */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (4E61DD102D2D31FF00BD8198 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Feed API"; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -163,6 +164,7 @@
 		4E3DF4DA2D49167F009E413A /* Feed Cache */ = {
 			isa = PBXGroup;
 			children = (
+				4E3DF4EE2D4CDD0D009E413A /* Helpers */,
 				4E3DF4DB2D49173C009E413A /* CacheFeedUseCaseTests.swift */,
 				4E3DF4EC2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift */,
 			);
@@ -216,6 +218,7 @@
 			fileSystemSynchronizedGroups = (
 				4E3DF4892D3530D0009E413A /* Feed API */,
 				4E3DF4DE2D4934CC009E413A /* Helpers */,
+				4E3DF4EE2D4CDD0D009E413A /* Helpers */,
 			);
 			name = EssentialFeedTests;
 			productName = EssentialFeedTests;
