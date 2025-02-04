@@ -24,7 +24,7 @@ class ValidateFeedCacheUseCaseTests: XCTestCase {
         XCTAssertEqual(store.receivedMessages, [.retrieve, .deleteCachedFeed])
     }
     
-    func test_loadvalidateCache_doesNotDeleteCacheOnEmptyCache(){
+    func test_validateCache_doesNotDeleteCacheOnEmptyCache(){
         let (sut, store) = makeSUT()
         
         sut.validateCache()
