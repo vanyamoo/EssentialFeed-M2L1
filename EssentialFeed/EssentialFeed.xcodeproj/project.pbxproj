@@ -13,6 +13,7 @@
 		4E3DF4AC2D3AA33C009E413A /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080EDEF121B6DA7E00813479 /* EssentialFeed.framework */; };
 		4E3DF4DC2D49173C009E413A /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DF4DB2D49173C009E413A /* CacheFeedUseCaseTests.swift */; };
 		4E3DF4ED2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DF4EC2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift */; };
+		4E3DF4F22D523626009E413A /* ValidateFeedCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DF4F12D52361E009E413A /* ValidateFeedCacheUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		4E3DF4A82D3AA33C009E413A /* EssentialFeedAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3DF4DB2D49173C009E413A /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 		4E3DF4EC2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
+		4E3DF4F12D52361E009E413A /* ValidateFeedCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateFeedCacheUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -167,6 +169,7 @@
 				4E3DF4EE2D4CDD0D009E413A /* Helpers */,
 				4E3DF4DB2D49173C009E413A /* CacheFeedUseCaseTests.swift */,
 				4E3DF4EC2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift */,
+				4E3DF4F12D52361E009E413A /* ValidateFeedCacheUseCaseTests.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E3DF4F22D523626009E413A /* ValidateFeedCacheUseCaseTests.swift in Sources */,
 				4E3DF4DC2D49173C009E413A /* CacheFeedUseCaseTests.swift in Sources */,
 				4E3DF4ED2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift in Sources */,
 			);
