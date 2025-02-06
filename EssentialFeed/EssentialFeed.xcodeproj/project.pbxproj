@@ -170,11 +170,11 @@
 		4E3DF4DA2D49167F009E413A /* Feed Cache */ = {
 			isa = PBXGroup;
 			children = (
-				4E3DF4FC2D53D68D009E413A /* CodableFeedStoreTests.swift */,
 				4E3DF4EE2D4CDD0D009E413A /* Helpers */,
 				4E3DF4DB2D49173C009E413A /* CacheFeedUseCaseTests.swift */,
 				4E3DF4EC2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift */,
 				4E3DF4F12D52361E009E413A /* ValidateFeedCacheUseCaseTests.swift */,
+				4E3DF4FC2D53D68D009E413A /* CodableFeedStoreTests.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
