@@ -14,6 +14,7 @@
 		4E3DF4DC2D49173C009E413A /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DF4DB2D49173C009E413A /* CacheFeedUseCaseTests.swift */; };
 		4E3DF4ED2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DF4EC2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift */; };
 		4E3DF4F22D523626009E413A /* ValidateFeedCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DF4F12D52361E009E413A /* ValidateFeedCacheUseCaseTests.swift */; };
+		4E3DF4FD2D53D695009E413A /* CodableFeedStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DF4FC2D53D68D009E413A /* CodableFeedStoreTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4E3DF4DB2D49173C009E413A /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 		4E3DF4EC2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		4E3DF4F12D52361E009E413A /* ValidateFeedCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateFeedCacheUseCaseTests.swift; sourceTree = "<group>"; };
+		4E3DF4FC2D53D68D009E413A /* CodableFeedStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStoreTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -168,6 +170,7 @@
 		4E3DF4DA2D49167F009E413A /* Feed Cache */ = {
 			isa = PBXGroup;
 			children = (
+				4E3DF4FC2D53D68D009E413A /* CodableFeedStoreTests.swift */,
 				4E3DF4EE2D4CDD0D009E413A /* Helpers */,
 				4E3DF4DB2D49173C009E413A /* CacheFeedUseCaseTests.swift */,
 				4E3DF4EC2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift */,
@@ -335,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E3DF4FD2D53D695009E413A /* CodableFeedStoreTests.swift in Sources */,
 				4E3DF4F22D523626009E413A /* ValidateFeedCacheUseCaseTests.swift in Sources */,
 				4E3DF4DC2D49173C009E413A /* CacheFeedUseCaseTests.swift in Sources */,
 				4E3DF4ED2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift in Sources */,
