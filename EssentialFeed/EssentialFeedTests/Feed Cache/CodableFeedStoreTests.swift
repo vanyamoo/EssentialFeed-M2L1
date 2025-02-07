@@ -232,15 +232,15 @@ class CodableFeedStoreTests: XCTestCase {
     }
     
     private func deleteCache(from sut: CodableFeedStore) -> Error? {
-            let exp = expectation(description: "Wait for cache deletion")
-            var deletionError: Error?
-            sut.deleteCachedFeed { receivedDeletionError in
-                deletionError = receivedDeletionError
-                exp.fulfill()
-            }
-            wait(for: [exp], timeout: 1.0)
-            return deletionError
+        let exp = expectation(description: "Wait for cache deletion")
+        var deletionError: Error?
+        sut.deleteCachedFeed { receivedDeletionError in
+            deletionError = receivedDeletionError
+            exp.fulfill()
         }
+        wait(for: [exp], timeout: 1.0)
+        return deletionError
+    }
     
     private func expect(_ sut: CodableFeedStore, toRetrieveTwice expectedResult: RetrieveCachedFeedResult, file: StaticString = #file, line: UInt = #line) {
         expect(sut, toRetrieve: expectedResult, file: file, line: line)
