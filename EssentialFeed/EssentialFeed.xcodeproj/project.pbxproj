@@ -15,6 +15,7 @@
 		4E3DF4ED2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DF4EC2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift */; };
 		4E3DF4F22D523626009E413A /* ValidateFeedCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DF4F12D52361E009E413A /* ValidateFeedCacheUseCaseTests.swift */; };
 		4E3DF4FD2D53D695009E413A /* CodableFeedStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DF4FC2D53D68D009E413A /* CodableFeedStoreTests.swift */; };
+		4E6C34322D5A69FE003C5E8F /* FeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6C34312D5A69FE003C5E8F /* FeedStoreSpecs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		4E3DF4EC2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		4E3DF4F12D52361E009E413A /* ValidateFeedCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateFeedCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		4E3DF4FC2D53D68D009E413A /* CodableFeedStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStoreTests.swift; sourceTree = "<group>"; };
+		4E6C34312D5A69FE003C5E8F /* FeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoreSpecs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -176,6 +178,7 @@
 				4E3DF4EC2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift */,
 				4E3DF4F12D52361E009E413A /* ValidateFeedCacheUseCaseTests.swift */,
 				4E3DF4FC2D53D68D009E413A /* CodableFeedStoreTests.swift */,
+				4E6C34312D5A69FE003C5E8F /* FeedStoreSpecs.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				4E3DF4F22D523626009E413A /* ValidateFeedCacheUseCaseTests.swift in Sources */,
 				4E3DF4DC2D49173C009E413A /* CacheFeedUseCaseTests.swift in Sources */,
 				4E3DF4ED2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift in Sources */,
+				4E6C34322D5A69FE003C5E8F /* FeedStoreSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
