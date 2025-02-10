@@ -186,13 +186,21 @@
 				4E3DF4EC2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift */,
 				4E3DF4F12D52361E009E413A /* ValidateFeedCacheUseCaseTests.swift */,
 				4E3DF4FC2D53D68D009E413A /* CodableFeedStoreTests.swift */,
+				4E6C345F2D5AA009003C5E8F /* FeedStoreSpecs */,
+			);
+			path = "Feed Cache";
+			sourceTree = "<group>";
+		};
+		4E6C345F2D5AA009003C5E8F /* FeedStoreSpecs */ = {
+			isa = PBXGroup;
+			children = (
 				4E6C34332D5A6D05003C5E8F /* XCTestCase+FeedStoreSpecs.swift */,
 				4E6C34592D5A9DBA003C5E8F /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift */,
 				4E6C345B2D5A9E9D003C5E8F /* XCTestCase+FailableInsertFeedStoreSpecs.swift */,
 				4E6C345D2D5A9F57003C5E8F /* XCTestCase+FailableDeleteFeedStoreSpecs.swift */,
 				4E6C34312D5A69FE003C5E8F /* FeedStoreSpecs.swift */,
 			);
-			path = "Feed Cache";
+			path = FeedStoreSpecs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
