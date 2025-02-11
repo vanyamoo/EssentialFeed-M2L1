@@ -11,8 +11,6 @@
 		080EDF0C21B6DAE800813479 /* FeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080EDF0B21B6DAE800813479 /* FeedImage.swift */; };
 		080EDF0E21B6DCB600813479 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080EDF0D21B6DCB600813479 /* FeedLoader.swift */; };
 		4E1922972D5B6EEE00891371 /* CoreDataFeedStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1922962D5B6EEA00891371 /* CoreDataFeedStoreTests.swift */; };
-		4E19229E2D5B71D800891371 /* FeedStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E19229C2D5B71D800891371 /* FeedStore.xcdatamodeld */; };
-		4E19229F2D5B71D800891371 /* FeedStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E19229C2D5B71D800891371 /* FeedStore.xcdatamodeld */; };
 		4E3DF4AC2D3AA33C009E413A /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080EDEF121B6DA7E00813479 /* EssentialFeed.framework */; };
 		4E3DF4DC2D49173C009E413A /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DF4DB2D49173C009E413A /* CacheFeedUseCaseTests.swift */; };
 		4E3DF4ED2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DF4EC2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift */; };
@@ -50,7 +48,6 @@
 		080EDF0B21B6DAE800813479 /* FeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImage.swift; sourceTree = "<group>"; };
 		080EDF0D21B6DCB600813479 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		4E1922962D5B6EEA00891371 /* CoreDataFeedStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedStoreTests.swift; sourceTree = "<group>"; };
-		4E19229D2D5B71D800891371 /* FeedStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FeedStore.xcdatamodel; sourceTree = "<group>"; };
 		4E3DF4A82D3AA33C009E413A /* EssentialFeedAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3DF4DB2D49173C009E413A /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 		4E3DF4EC2D4CD12C009E413A /* LoadFeedFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
@@ -64,6 +61,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4E1922F22D5BA44900891371 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Infrastructure/CoreData/FeedStore.xcdatamodeld,
+			);
+			target = 4E3DF4A72D3AA33C009E413A /* EssentialFeedAPIEndToEndTests */;
+		};
 		4E3DF4E12D4934CC009E413A /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -75,10 +79,11 @@
 		4E3DF4E52D4B9426009E413A /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				CodableFeedStore.swift,
 				FeedCachePolicy.swift,
 				FeedStore.swift,
+				Infrastructure/Codable/CodableFeedStore.swift,
 				Infrastructure/CoreData/CoreDataFeedStore.swift,
+				Infrastructure/CoreData/FeedStore.xcdatamodeld,
 				LocalFeedImage.swift,
 				LocalFeedLoader.swift,
 			);
@@ -101,7 +106,7 @@
 		4E3DF4892D3530D0009E413A /* Feed API */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Feed API"; sourceTree = "<group>"; };
 		4E3DF4A92D3AA33C009E413A /* EssentialFeedAPIEndToEndTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = EssentialFeedAPIEndToEndTests; sourceTree = "<group>"; };
 		4E3DF4DE2D4934CC009E413A /* Helpers */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (4E3DF4E12D4934CC009E413A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Helpers; sourceTree = "<group>"; };
-		4E3DF4E22D4B9192009E413A /* Feed Cache */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (4E3DF4E52D4B9426009E413A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Feed Cache"; sourceTree = "<group>"; };
+		4E3DF4E22D4B9192009E413A /* Feed Cache */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (4E3DF4E52D4B9426009E413A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 4E1922F22D5BA44900891371 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Feed Cache"; sourceTree = "<group>"; };
 		4E3DF4EE2D4CDD0D009E413A /* Helpers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Helpers; sourceTree = "<group>"; };
 		4E61DD0C2D2D319500BD8198 /* Feed API */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (4E61DD102D2D31FF00BD8198 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Feed API"; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -136,7 +141,6 @@
 		080EDEE721B6DA7E00813479 = {
 			isa = PBXGroup;
 			children = (
-				4E19229C2D5B71D800891371 /* FeedStore.xcdatamodeld */,
 				080EDEF321B6DA7E00813479 /* EssentialFeed */,
 				080EDEFE21B6DA7E00813479 /* EssentialFeedTests */,
 				4E3DF4A92D3AA33C009E413A /* EssentialFeedAPIEndToEndTests */,
@@ -363,7 +367,6 @@
 			files = (
 				080EDF0E21B6DCB600813479 /* FeedLoader.swift in Sources */,
 				080EDF0C21B6DAE800813479 /* FeedImage.swift in Sources */,
-				4E19229F2D5B71D800891371 /* FeedStore.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,7 +391,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E19229E2D5B71D800891371 /* FeedStore.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,20 +724,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		4E19229C2D5B71D800891371 /* FeedStore.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				4E19229D2D5B71D800891371 /* FeedStore.xcdatamodel */,
-			);
-			currentVersion = 4E19229D2D5B71D800891371 /* FeedStore.xcdatamodel */;
-			name = FeedStore.xcdatamodeld;
-			path = "EssentialFeed/Feed Cache/FeedStore.xcdatamodeld";
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 080EDEE821B6DA7E00813479 /* Project object */;
 }
