@@ -76,9 +76,9 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				CodableFeedStore.swift,
-				CoreDataFeedStore.swift,
 				FeedCachePolicy.swift,
 				FeedStore.swift,
+				Infrastructure/CoreData/CoreDataFeedStore.swift,
 				LocalFeedImage.swift,
 				LocalFeedLoader.swift,
 			);
