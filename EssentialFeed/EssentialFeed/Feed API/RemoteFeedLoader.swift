@@ -15,11 +15,7 @@ public final class RemoteFeedLoader: FeedLoader {
         case connectivity
         case invalidData
     }
-    public typealias Result = LoadFeedResult
-//    public enum Result: Equatable {
-//        case success([FeedImage])
-//        case failure(Error)
-//    }
+    public typealias Result = FeedLoader.Result
     
     public init(url: URL, client: HTTPClient) {
         self.url = url
