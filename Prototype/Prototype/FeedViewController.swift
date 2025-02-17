@@ -31,6 +31,7 @@ final class FeedViewController: UITableViewController {
 }
 
 extension FeedImageCell {
+    
     func configure(with model: FeedImageViewModel) {
         locationLabel.text = model.location
         locationContainer.isHidden = model.location == nil
