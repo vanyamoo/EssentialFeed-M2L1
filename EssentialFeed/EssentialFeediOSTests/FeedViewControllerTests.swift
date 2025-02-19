@@ -27,7 +27,6 @@ final class FeedViewController: UIViewController {
 final class FeedViewControllerTests: XCTestCase {
 
 	func test_init_doesNotLoadFeed() {
-        
 		let loader = LoaderSpy()
 		_ = FeedViewController(loader: loader)
 
@@ -35,6 +34,7 @@ final class FeedViewControllerTests: XCTestCase {
 	}
     
     func test_viewDidLoad_loadsFeed() {
+        
         let loader = LoaderSpy()
         let sut = FeedViewController(loader: loader)
         
