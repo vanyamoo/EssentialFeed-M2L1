@@ -4,7 +4,12 @@
       "id" : "8EA6F27C-8B2F-4BFF-A50B-A51835D8BBE2",
       "name" : "Test Scheme Action",
       "options" : {
-
+        "environmentVariableEntries" : [
+          {
+            "key" : "IDEPreferLogStreaming",
+            "value" : "YES"
+          }
+        ]
       }
     }
   ],
