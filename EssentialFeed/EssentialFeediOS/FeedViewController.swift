@@ -96,6 +96,11 @@ final public class FeedViewController: UITableViewController, UITableViewDataSou
         return cell
     }
     
+    // iOS15 update
+//    public override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        startTask(forRowAt: indexPath)
+//    }
+    
     public override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cancelTask(forRowAt: indexPath)
     }
