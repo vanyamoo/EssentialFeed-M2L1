@@ -21,31 +21,30 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
         self.refreshController = refreshController
     }
     
-    public override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        refreshControl = refreshController?.view
-        tableView.prefetchDataSource = self
-        refreshController?.refresh()
-        
-        onViewIsAppearing = { vc in
-            vc.refreshControl?.beginRefreshing()
-            vc.onViewIsAppearing = nil
-        }
-    }
-    
 //    public override func viewDidLoad() {
 //        super.viewDidLoad()
 //        
 //        refreshControl = refreshController?.view
 //        tableView.prefetchDataSource = self
-//        //refreshController?.refresh()
+//        refreshController?.refresh()
 //        
 //        onViewIsAppearing = { vc in
+//            vc.refreshControl?.beginRefreshing()
 //            vc.onViewIsAppearing = nil
-//            vc.refreshController?.refresh() //vc.refreshControl?.beginRefreshing()
 //        }
 //    }
+    
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        refreshControl = refreshController?.view
+        tableView.prefetchDataSource = self
+        
+        onViewIsAppearing = { vc in
+            vc.onViewIsAppearing = nil
+            vc.refreshController?.refresh()
+        }
+    }
     
     public override func viewIsAppearing(_ animated: Bool) {
         super.viewIsAppearing(animated)
