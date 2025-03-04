@@ -9,6 +9,34 @@ import UIKit
 import EssentialFeediOS
 
 extension FeedViewController {
+    
+    func simulateAppearance() {
+        if !isViewLoaded {
+            loadViewIfNeeded()
+            prepareForFirstAppearance()
+        }
+        
+        beginAppearanceTransition(true, animated: false)
+        endAppearanceTransition()
+    }
+    
+    private func prepareForFirstAppearance() {
+        replaceRefreshControlWithFakeForiOS17Support()
+    }
+    
+    func replaceRefreshControlWithFakeForiOS17Support() {
+        let fake = FakeRefreshControl()
+        
+        refreshControl?.allTargets.forEach { target in
+            refreshControl?.actions(forTarget: target, forControlEvent: .valueChanged)?.forEach { action in
+                fake.addTarget(target, action: Selector(action), for: .valueChanged)
+            }
+        }
+        
+        refreshControl = fake
+        refreshController?.view = fake
+    }
+    
     func simulateUserInitiatedFeedReload() {
         refreshControl?.simulatePullToRefresh()
     }
@@ -56,31 +84,6 @@ extension FeedViewController {
     
     private var feedImagesSection: Int {
         return 0
-    }
-}
-
-extension FeedViewController {
-    func simulateAppearance() {
-        if !isViewLoaded {
-            loadViewIfNeeded()
-            replaceRefreshControlWithFakeForiOS17Support()
-        }
-        
-        beginAppearanceTransition(true, animated: false)
-        endAppearanceTransition()
-    }
-    
-    func replaceRefreshControlWithFakeForiOS17Support() {
-        let fake = FakeRefreshControl()
-        
-        refreshControl?.allTargets.forEach { target in
-            refreshControl?.actions(forTarget: target, forControlEvent: .valueChanged)?.forEach { action in
-                fake.addTarget(target, action: Selector(action), for: .valueChanged)
-            }
-        }
-        
-        refreshControl = fake
-        refreshController?.view = fake
     }
 }
 

@@ -62,9 +62,9 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
     }
     
     // iOS15 update
-//    public override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-//        startTask(forRowAt: indexPath)
-//    }
+    public override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        startTask(forRowAt: indexPath)
+    }
     
     public override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cancelCellControllerLoad(forRowAt: indexPath)
@@ -82,6 +82,10 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
     
     private func cellController(forRowAt indexPath: IndexPath) -> FeedImageCellController {
         return tableModel[indexPath.row]
+    }
+    
+    private func startTask(forRowAt indexPath: IndexPath) {
+        cellController(forRowAt: indexPath).preload()
     }
     
     private func cancelCellControllerLoad(forRowAt indexPath: IndexPath) {
