@@ -20,7 +20,7 @@ extension FeedViewController {
         endAppearanceTransition()
     }
     
-    private func prepareForFirstAppearance() {
+    func prepareForFirstAppearance() {
         replaceRefreshControlWithFakeForiOS17Support()
     }
     
