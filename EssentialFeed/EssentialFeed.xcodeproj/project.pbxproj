@@ -29,6 +29,7 @@
 		4EB98C602D96BA0A0048F8AC /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB98C5F2D96BA0A0048F8AC /* FeedViewModel.swift */; };
 		4EB98C622D96BF160048F8AC /* FeedLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB98C612D96BF160048F8AC /* FeedLoadingViewModel.swift */; };
 		4EB98C642D96BF720048F8AC /* FeedErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB98C632D96BF720048F8AC /* FeedErrorViewModel.swift */; };
+		4EB98C662D96C66B0048F8AC /* FeedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB98C322D956D630048F8AC /* FeedLocalizationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		4E6C345B2D5A9E9D003C5E8F /* XCTestCase+FailableInsertFeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FailableInsertFeedStoreSpecs.swift"; sourceTree = "<group>"; };
 		4E6C345D2D5A9F57003C5E8F /* XCTestCase+FailableDeleteFeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FailableDeleteFeedStoreSpecs.swift"; sourceTree = "<group>"; };
 		4E7F344F2D64CB70008B65A7 /* EssentialFeedAPIEndToEndTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialFeedAPIEndToEndTests.xctestplan; sourceTree = "<group>"; };
+		4EB98C322D956D630048F8AC /* FeedLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLocalizationTests.swift; sourceTree = "<group>"; };
 		4EB98C542D9584760048F8AC /* FeedPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenterTests.swift; sourceTree = "<group>"; };
 		4EB98C572D96A8470048F8AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
 		4EB98C592D96A8C90048F8AC /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Feed.strings; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 		4EB98C532D9584220048F8AC /* Feed Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				4EB98C322D956D630048F8AC /* FeedLocalizationTests.swift */,
 				4EB98C542D9584760048F8AC /* FeedPresenterTests.swift */,
 			);
 			path = "Feed Presentation";
@@ -617,6 +620,7 @@
 				4EB98C552D95847A0048F8AC /* FeedPresenterTests.swift in Sources */,
 				4E6C345C2D5A9EA6003C5E8F /* XCTestCase+FailableInsertFeedStoreSpecs.swift in Sources */,
 				4E6C345E2D5A9F5A003C5E8F /* XCTestCase+FailableDeleteFeedStoreSpecs.swift in Sources */,
+				4EB98C662D96C66B0048F8AC /* FeedLocalizationTests.swift in Sources */,
 				4E6C34342D5A6D05003C5E8F /* XCTestCase+FeedStoreSpecs.swift in Sources */,
 				4E3DF4F22D523626009E413A /* ValidateFeedCacheUseCaseTests.swift in Sources */,
 				4E6C345A2D5A9DC2003C5E8F /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift in Sources */,
