@@ -7,10 +7,38 @@
 
 
 import XCTest
+import EssentialFeed
+
+struct FeedImageViewModel {
+    let description: String?
+    let location: String?
+    let image: Any?
+    let isLoading: Bool
+    let shouldRetry: Bool
+
+    var hasLocation: Bool {
+        return location != nil
+    }
+}
+
+protocol FeedImageView {
+    func display(_ model: FeedImageViewModel)
+}
 
 class FeedImagePresenter {
-    init(view: Any) {
-
+    private let view: FeedImageView
+    
+    init(view: FeedImageView) {
+        self.view = view
+    }
+    
+    func didStartLoadingImageData(for model: FeedImage) {
+        view.display(FeedImageViewModel(
+            description: model.description,
+            location: model.location,
+            image: nil,
+            isLoading: true,
+            shouldRetry: false))
     }
 }
 
@@ -32,7 +60,11 @@ class FeedImagePresenterTests: XCTestCase {
 		return (sut, view)
 	}
 
-	private class ViewSpy {
-		let messages = [Any]()
-	}
+    private class ViewSpy: FeedImageView {
+        private(set) var messages = [FeedImageViewModel]()
+        
+        func display(_ model: FeedImageViewModel) {
+            messages.append(model)
+        }
+    }
 }
