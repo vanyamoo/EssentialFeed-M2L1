@@ -31,6 +31,7 @@
 		4EB98C642D96BF720048F8AC /* FeedErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB98C632D96BF720048F8AC /* FeedErrorViewModel.swift */; };
 		4EB98C662D96C66B0048F8AC /* FeedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB98C322D956D630048F8AC /* FeedLocalizationTests.swift */; };
 		4EB98C682D96EBC70048F8AC /* FeedImagePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB98C672D96EBC70048F8AC /* FeedImagePresenterTests.swift */; };
+		4EB98C6A2D96F4DF0048F8AC /* FeedImagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB98C692D96F4D30048F8AC /* FeedImagePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		4EB98C612D96BF160048F8AC /* FeedLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoadingViewModel.swift; sourceTree = "<group>"; };
 		4EB98C632D96BF720048F8AC /* FeedErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedErrorViewModel.swift; sourceTree = "<group>"; };
 		4EB98C672D96EBC70048F8AC /* FeedImagePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImagePresenterTests.swift; sourceTree = "<group>"; };
+		4EB98C692D96F4D30048F8AC /* FeedImagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImagePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -336,6 +338,7 @@
 		4EB98C5B2D96B0FB0048F8AC /* Feed Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				4EB98C692D96F4D30048F8AC /* FeedImagePresenter.swift */,
 				4EB98C632D96BF720048F8AC /* FeedErrorViewModel.swift */,
 				4EB98C612D96BF160048F8AC /* FeedLoadingViewModel.swift */,
 				4EB98C5F2D96BA0A0048F8AC /* FeedViewModel.swift */,
@@ -612,6 +615,7 @@
 				4EB98C5D2D96B14E0048F8AC /* FeedPresenter.swift in Sources */,
 				4EB98C642D96BF720048F8AC /* FeedErrorViewModel.swift in Sources */,
 				4EB98C622D96BF160048F8AC /* FeedLoadingViewModel.swift in Sources */,
+				4EB98C6A2D96F4DF0048F8AC /* FeedImagePresenter.swift in Sources */,
 				080EDF0C21B6DAE800813479 /* FeedImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
