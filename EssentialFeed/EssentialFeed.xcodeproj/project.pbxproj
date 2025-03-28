@@ -26,6 +26,7 @@
 		4EB98C552D95847A0048F8AC /* FeedPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB98C542D9584760048F8AC /* FeedPresenterTests.swift */; };
 		4EB98C5D2D96B14E0048F8AC /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB98C5C2D96B1480048F8AC /* FeedPresenter.swift */; };
 		4EB98C5E2D96B4500048F8AC /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4EB98C562D96A8470048F8AC /* Feed.strings */; };
+		4EB98C602D96BA0A0048F8AC /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB98C5F2D96BA0A0048F8AC /* FeedViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		4EB98C592D96A8C90048F8AC /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Feed.strings; sourceTree = "<group>"; };
 		4EB98C5A2D96A8D20048F8AC /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
 		4EB98C5C2D96B1480048F8AC /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
+		4EB98C5F2D96BA0A0048F8AC /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -324,6 +326,7 @@
 		4EB98C5B2D96B0FB0048F8AC /* Feed Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				4EB98C5F2D96BA0A0048F8AC /* FeedViewModel.swift */,
 				4EB98C5C2D96B1480048F8AC /* FeedPresenter.swift */,
 				4EB98C562D96A8470048F8AC /* Feed.strings */,
 			);
@@ -593,6 +596,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				080EDF0E21B6DCB600813479 /* FeedLoader.swift in Sources */,
+				4EB98C602D96BA0A0048F8AC /* FeedViewModel.swift in Sources */,
 				4EB98C5D2D96B14E0048F8AC /* FeedPresenter.swift in Sources */,
 				080EDF0C21B6DAE800813479 /* FeedImage.swift in Sources */,
 			);
