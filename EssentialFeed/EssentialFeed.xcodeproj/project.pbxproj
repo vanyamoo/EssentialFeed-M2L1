@@ -149,6 +149,7 @@
 				FeedImageDataStore.swift,
 				FeedStore.swift,
 				Infrastructure/CoreData/CoreDataFeedStore.swift,
+				"Infrastructure/CoreData/CoreDataFeedStore+FeedImageDataLoader.swift",
 				Infrastructure/CoreData/CoreDataHelpers.swift,
 				Infrastructure/CoreData/FeedStore.xcdatamodeld,
 				Infrastructure/CoreData/ManagedCache.swift,
