@@ -155,6 +155,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				FeedItemsMapper.swift,
+				"Helpers/HTTPURLResponse+StatusCode.swift",
 				HTTPClient.swift,
 				RemoteFeedImageDataLoader.swift,
 				RemoteFeedItem.swift,
