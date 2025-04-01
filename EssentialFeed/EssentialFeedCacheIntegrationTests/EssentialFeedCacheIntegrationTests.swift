@@ -31,8 +31,8 @@ class EssentialFeedCacheIntegrationTests: XCTestCase {
     }
     
     func test_loadFeed_deliversItemsSavedOnASeparateInstance() {
-            let feedLoaderToPerformSave = makeFeedLoader()
-            let feedLoaderToPerformLoad = makeFeedLoader()
+        let feedLoaderToPerformSave = makeFeedLoader()
+        let feedLoaderToPerformLoad = makeFeedLoader()
         let feed = uniqueImageFeed().models
         
         save(feed, with: feedLoaderToPerformSave)
@@ -48,7 +48,7 @@ class EssentialFeedCacheIntegrationTests: XCTestCase {
         let latestFeed = uniqueImageFeed().models
         
         save(firstFeed, with: feedLoaderToPerformFirstSave)
-        save(latestFeed, with: feedLoaderToPerformFirstSave)
+        save(latestFeed, with: feedLoaderToPerformLastSave)
         
         expect(feedLoaderToPerformLoad, toLoad: latestFeed)
     }
