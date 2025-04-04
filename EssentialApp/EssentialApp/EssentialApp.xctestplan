@@ -33,15 +33,6 @@
         "identifier" : "4EB98CAA2D9C1C230048F8AC",
         "name" : "EssentialAppTests"
       }
-    },
-    {
-      "enabled" : false,
-      "parallelizable" : true,
-      "target" : {
-        "containerPath" : "container:EssentialApp.xcodeproj",
-        "identifier" : "4EB98CB42D9C1C230048F8AC",
-        "name" : "EssentialAppUITests"
-      }
     }
   ],
   "version" : 1
