@@ -38,7 +38,7 @@ private class DebuggingHTTPClient: HTTPClient {
     init(connectivity: String) {
         self.connectivity = connectivity
     }
-    
+
     func get(from url: URL, completion: @escaping (HTTPClient.Result) -> Void) -> HTTPClientTask {
         switch connectivity {
         case "online":
