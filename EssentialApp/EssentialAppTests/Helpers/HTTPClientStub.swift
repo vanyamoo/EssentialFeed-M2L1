@@ -1,3 +1,9 @@
+//
+//  HTTPClientStub.swift
+//  EssentialApp
+//
+//  Created by Vanya Mutafchieva on 08/04/2025.
+//
 
 import Foundation
 import EssentialFeed
