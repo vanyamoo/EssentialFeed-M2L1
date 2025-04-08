@@ -1,3 +1,11 @@
+//
+//  FeedAcceptanceTests.swift
+//  EssentialApp
+//
+//  Created by Vanya Mutafchieva on 07/04/2025.
+//
+
+
 import XCTest
 import EssentialFeed
 import EssentialFeediOS
@@ -29,10 +37,12 @@ class FeedAcceptanceTests: XCTestCase {
 	) -> FeedViewController {
 		let sut = SceneDelegate(httpClient: httpClient, store: store)
 		sut.window = UIWindow()
-		sut.configureWindow()
-
-		let nav = sut.window?.rootViewController as? UINavigationController
-		return nav?.topViewController as! FeedViewController
+        sut.configureWindow()
+        
+        let nav = sut.window?.rootViewController as? UINavigationController
+        let vc = nav?.topViewController as! FeedViewController
+        vc.simulateAppearance()
+        return vc
 	}
 
 	private class HTTPClientStub: HTTPClient {
