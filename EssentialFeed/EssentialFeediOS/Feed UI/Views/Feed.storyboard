@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y7n-gv-6Nw">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -95,7 +95,7 @@
                                                             <rect key="frame" x="20" y="0.0" width="333" height="36"/>
                                                             <string key="text">Location,                                                                                                                   Location</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <color key="textColor" systemColor="systemGray4Color"/>
+                                                            <color key="textColor" systemColor="secondaryLabelColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -114,14 +114,14 @@
                                                             <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                             <state key="normal" title="↻">
-                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="titleColor" systemColor="systemBackgroundColor"/>
                                                             </state>
                                                             <connections>
                                                                 <action selector="retryButtonTapped" destination="GgY-Cr-7y2" eventType="touchUpInside" id="rfs-UB-zzq"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                    <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="lsb-LD-4h8" secondAttribute="bottom" id="7PJ-VA-rid"/>
                                                         <constraint firstAttribute="bottom" secondItem="Ngx-GQ-AVl" secondAttribute="bottom" id="BEf-Lf-Hyi"/>
@@ -143,7 +143,7 @@
                                                     <rect key="frame" x="0.0" y="431.33333333333331" width="349" height="114.66666666666669"/>
                                                     <string key="text">Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" systemColor="systemGrayColor"/>
+                                                    <color key="textColor" systemColor="secondaryLabelColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -197,17 +197,14 @@
     </scenes>
     <resources>
         <image name="pin" width="10" height="14.333333015441895"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
