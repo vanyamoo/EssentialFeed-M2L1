@@ -18,15 +18,17 @@ class FeedSnapshotTests: XCTestCase {
         
         sut.display(emptyFeed())
         
-        assert(snapshot: sut.snapshot(), named: "EMPTY_FEED")
+        assert(snapshot: sut.snapshot(for: .iPhone8(style: .light)), named: "EMPTY_FEED_light")
+        assert(snapshot: sut.snapshot(for: .iPhone8(style: .dark)), named: "EMPTY_FEED_dark")
     }
     
     func test_feedWithContent() {
         let sut = makeSUT()
-
+        
         sut.display(feedWithContent())
-
-        assert(snapshot: sut.snapshot(), named: "FEED_WITH_CONTENT")
+        
+        assert(snapshot: sut.snapshot(for: .iPhone8(style: .light)), named: "FEED_WITH_CONTENT_light")
+        assert(snapshot: sut.snapshot(for: .iPhone8(style: .dark)), named: "FEED_WITH_CONTENT_dark")
     }
     
     func test_feedWithErrorMessage() {
@@ -34,15 +36,17 @@ class FeedSnapshotTests: XCTestCase {
         
         sut.display(.error(message: "This is a\nmulti-line\nerror message"))
         
-        assert(snapshot: sut.snapshot(), named: "FEED_WITH_ERROR_MESSAGE")
+        assert(snapshot: sut.snapshot(for: .iPhone8(style: .light)), named: "FEED_WITH_ERROR_MESSAGE_light")
+        assert(snapshot: sut.snapshot(for: .iPhone8(style: .dark)), named: "FEED_WITH_ERROR_MESSAGE_dark")
     }
     
     func test_feedWithFailedImageLoading() {
         let sut = makeSUT()
-
+        
         sut.display(feedWithFailedImageLoading())
-
-        assert(snapshot: sut.snapshot(), named: "FEED_WITH_FAILED_IMAGE_LOADING")
+        
+        assert(snapshot: sut.snapshot(for: .iPhone8(style: .light)), named: "FEED_WITH_FAILED_IMAGE_LOADING_light")
+        assert(snapshot: sut.snapshot(for: .iPhone8(style: .dark)), named: "FEED_WITH_FAILED_IMAGE_LOADING_dark")
     }
 
 
@@ -54,6 +58,8 @@ class FeedSnapshotTests: XCTestCase {
         let storyboard = UIStoryboard(name: "Feed", bundle: bundle)
         let controller = storyboard.instantiateInitialViewController() as! FeedViewController
         controller.loadViewIfNeeded()
+        controller.tableView.showsVerticalScrollIndicator = false
+        controller.tableView.showsHorizontalScrollIndicator = false
         return controller
     }
     
@@ -140,15 +146,6 @@ class FeedSnapshotTests: XCTestCase {
         }
 
         return data
-    }
-}
-
-extension UIViewController {
-    func snapshot() -> UIImage {
-        let renderer = UIGraphicsImageRenderer(bounds: view.bounds)
-        return renderer.image { action in
-            view.layer.render(in: action.cgContext)
-        }
     }
 }
 
