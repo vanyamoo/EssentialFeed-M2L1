@@ -283,11 +283,11 @@
 		080EDEF321B6DA7E00813479 /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
-				4EB98C5B2D96B0FB0048F8AC /* Feed Presentation */,
-				4E3DF4E22D4B9192009E413A /* Feed Cache */,
-				4E61DD0C2D2D319500BD8198 /* Feed API */,
-				080EDEF521B6DA7E00813479 /* Info.plist */,
 				080EDF1021B6DFA200813479 /* Feed Feature */,
+				4E61DD0C2D2D319500BD8198 /* Feed API */,
+				4E3DF4E22D4B9192009E413A /* Feed Cache */,
+				4EB98C5B2D96B0FB0048F8AC /* Feed Presentation */,
+				080EDEF521B6DA7E00813479 /* Info.plist */,
 			);
 			path = EssentialFeed;
 			sourceTree = "<group>";
